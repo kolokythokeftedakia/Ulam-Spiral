@@ -5,7 +5,7 @@
 
 int main(void){
 
-    printf("\033[48:5:0m\033[2J\033[1;1H");
+    printf("\033[48:5:0m\033[2J\033[1;1H"); //set foreground to black, erase the entire console and place cursor @(1,1)
     int dim;
     printf("Dimensions:");
     scanf("%d",&dim);

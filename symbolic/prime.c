@@ -12,17 +12,12 @@ bool isPrime(int** arr, int r, int c){
     return true;
 }
 
-
-void color(){
-    printf("\033[38;5;211m*\033[38;5;0m ");
-}
-
 void print(int** arr, int dim){
     printf("\n\033[38;5;0m");
     for(int i=0;i<dim;i++){
         for(int j=0;j<dim;j++)
         if(isPrime(arr, i, j))
-            color();
+            printf("\033[38;5;211m*\033[38;5;0m "); // make foreground pink, print * and restore foreground to black
         else
             printf("  ");
         printf("\n");
