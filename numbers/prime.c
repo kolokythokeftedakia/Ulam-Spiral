@@ -1,5 +1,6 @@
 #include "prime.h"
 #include <stdio.h>
+#include <math.h>
 
 bool isPrime(int** arr, int r, int c){
   
