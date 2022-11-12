@@ -1,10 +1,12 @@
 #include "prime.h"
 #include <stdio.h>
+#include <math.h>
 
 bool isPrime(int** arr, int r, int c){
   
     int tmp=arr[r][c];
-    for(int k=2;k<=tmp/2;k++){
+    if(tmp==1) return false;
+    for(int k=2;k<=(int) sqrt(tmp);k++){
         if(tmp%k==0)
             return false;
         else continue;
